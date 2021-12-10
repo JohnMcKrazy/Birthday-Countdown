@@ -18,7 +18,6 @@ function countdown() {
         birthdayCountdown = birthday - today;
     }
 
-    let countdownMonth = Math.floor(birthdayCountdown / 1000 / 60 / 60 / 24 / 30);
     let countdownDay = Math.floor(birthdayCountdown / 1000 / 60 / 60 / 24);
     console.log(countdownDay);
     let countdownHour = Math.floor(birthdayCountdown / 1000 / 60 / 60) % 24;
@@ -27,7 +26,6 @@ function countdown() {
     console.log(countdownMinutes);
     let countdownSeconds = Math.floor(birthdayCountdown / 1000) % 60;
     console.log(countdownSeconds);
-    months.textContent = formatTime(countdownMonth);
     day.textContent = formatTime(countdownDay);
     hour.textContent = formatTime(countdownHour);
     minute.textContent = formatTime(countdownMinutes);
